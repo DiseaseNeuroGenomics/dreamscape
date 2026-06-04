@@ -1,0 +1,82 @@
+
+/* Increase font size for post summaries */
+article {
+  font-size: 2.15rem;
+}
+
+/* Post card title */
+article h1,
+article h2 {
+  font-size: 12.75rem;
+  line-height: 1.25;
+}
+
+/* Post card text */
+article p {
+  font-size: 1.5rem;
+  line-height: 1.2;
+  text-align: justify;
+}
+
+/* Smaller post cards on list pages */
+article.bb {
+  font-size: 1.4rem;
+  padding: 0rem;
+}
+
+/* Smaller post-card image */
+article.bb .cover {
+  height: 14px;
+  min-height: 14px;
+  background-size: cover;
+  background-position: center;
+}
+
+/* Smaller post-card title */
+article.bb h1,
+article.bb h2 {
+  font-size: 1.0rem;
+  line-height: 1.2;
+  margin-bottom: 0.4rem;
+}
+
+
+.mw7, .measure-wide {
+    max-width: 65rem; /* Increase this value (default is 48rem) */
+}
+article {
+    max-width: 100%;
+}
+
+/* Adds space to the left and right of every table cell */
+table th, table td {
+    padding-left: .5rem !important;  /* Increase this value for more space */
+    padding-right: .5rem !important; /* Increase this value for more space */
+}
+
+.large-table table {
+    font-size: 2.3rem !important; /* Increases the text size */
+    line-height: 2.6;             /* Optional: improves readability */
+}
+
+/* Targets all tables on the website */
+article table {
+    font-size: 1.5rem !important; /* Increases text size (Default is usually 1rem) */
+    line-height: 1.6;              /* Adds vertical space between text lines for readability */
+    width: 100%;                   /* Optional: Forces tables to stretch to full content width */
+}
+
+/* Optional: Make header text slightly larger or bolder than the body text */
+article table th {
+    font-size: 2.35rem !important;
+    font-weight: 700;
+}
+
+
+/* Forces the background container block to a specific height */
+header .bg-black-60, header .cover {
+    min-height: 450px !important;  /* Set your minimum height */
+    height: 15vh;                  /* Or use viewport height (e.g., 45% of screen) */
+}
+
+

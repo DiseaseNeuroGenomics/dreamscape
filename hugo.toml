@@ -1,0 +1,25 @@
+baseURL = 'diseaseneurogenomics.github.io'
+locale = 'en-us'
+title = 'dreamscape'
+theme = 'ananke'
+disableBreadcrumbs = false
+layout = "projects"
+
+[params]
+  read_more_copy = "Read more"
+  recent_posts_number = 10
+  site_logo = ""
+  description = "Dreamscape ecosystem"
+  ananke.custom_css = ["custom.css"]
+  cover_dimming_class = "bg-black-0"
+ 
+  # featured_image = "https://ghoffman-cdn.s3.us-east-2.amazonaws.com/dreamscape/dreamscape.svg" 
+
+
+
+[params.ananke.social.follow]
+networks = ["github"]
+
+[params.ananke.social.github]
+username = "GabrielHoffman"
+profilelink = "https://github.com/GabrielHoffman"
