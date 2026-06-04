@@ -1,13 +1,26 @@
 
 
+# CSS: assets/ananke/css/custom.css
+
 # build interactively
 hugo server -D
+
 
 # build for release
 #rm -rf docs
 hugo --destination docs
 
-\cp -f docs/ananke/css/main.0cad27bc7f65543442cdc5659f8087db44b7a5b1ac470c816114b082f76d7563.css docs 
+\cp -f docs/ananke/css/main.0cad27bc7f65543442cdc5659f8087db44b7a5b1ac470c816114b082f76d7563.css docs/ 
 
-sed 's|<link rel="stylesheet" href="/dreamscape/ananke/css/main.0cad27bc7f65543442cdc5659f8087db44b7a5b1ac470c816114b082f76d7563.css" integrity="sha256-DK0nvH9lVDRCzcVln4CH20S3pbGsRwyBYRSwgvdtdWM=" crossorigin="anonymous">|<link rel="stylesheet" href="main.0cad27bc7f65543442cdc5659f8087db44b7a5b1ac470c816114b082f76d7563.css">|' docs/index.html
 
+sed 's|<link rel="stylesheet" href="/dreamscape/ananke/css/main.0cad27bc7f65543442cdc5659f8087db44b7a5b1ac470c816114b082f76d7563.css" integrity="sha256-DK0nvH9lVDRCzcVln4CH20S3pbGsRwyBYRSwgvdtdWM=" crossorigin="anonymous">|<link rel="stylesheet" href="main.0cad27bc7f65543442cdc5659f8087db44b7a5b1ac470c816114b082f76d7563.css">|' docs/index.html >> docs/index2.html
+
+echo "<head>
+  <style>
+    html { font-size: 70%; }
+  </style>
+</head>
+" > docs/index.html
+
+cat docs/index2.html >> docs/index.html
+rm -f docs/index2.html
