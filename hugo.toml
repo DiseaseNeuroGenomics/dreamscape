@@ -1,4 +1,4 @@
-baseURL = 'diseaseneurogenomics.github.io/dreamscape'
+baseURL = 'https://diseaseneurogenomics.github.io/dreamscape'
 locale = 'en-us'
 title = 'dreamscape'
 theme = 'ananke'
@@ -12,10 +12,6 @@ layout = "projects"
   description = "Dreamscape ecosystem"
   ananke.custom_css = ["custom.css"]
   cover_dimming_class = "bg-black-0"
- 
-  # featured_image = "https://ghoffman-cdn.s3.us-east-2.amazonaws.com/dreamscape/dreamscape.svg" 
-
-
 
 [params.ananke.social.follow]
 networks = ["github"]
