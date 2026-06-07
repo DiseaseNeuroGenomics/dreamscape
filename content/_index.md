@@ -5,14 +5,9 @@ featured_image_class: "pv2-l pv2-m pv1"
 omit_header_text: false
 ---
 
-Dreamscape is a ecosystem 
+Recent advances in single cell/nucleus transcriptomic technology have enabled collection of population-scale datasets to study cell type specific gene expression differences associated with disease state, stimulus, and genetic regulation. The scale of these data, complex study designs, and low read count per cell mean that characterizing cell type specific molecular mechanisms requires a purpose-built analytical framework. 
 
-Recent advances in single cell/nucleus transcriptomic technology has enabled collection of population-level data sets to study cell type specific gene expression differences associated with disease state, stimulus, and genetic regulation. The scale of these data, complex study designs, and low read count per cell mean that characterizing cell type specific molecular mechanisms requires a user-friendly, purpose-built analytical framework. We have developed the dreamlet package that applies a pseudobulk approach and fits a regression model for each gene and cell cluster to test differential expression across individuals associated with a trait of interest. Use of precision-weighted linear mixed models enables accounting for repeated measures study designs, high dimensional batch effects, and varying sequencing depth or observed cells per biosample.
-
-[R](https://www.r-project.org) packages
-[Bioconductor](https://bioconductor.org)
-
-C++ using the [Rcpp](https://www.rcpp.org) and the [armadillo](https://arma.sourceforge.net) library for numerical linear algebra.
+Dreamscape is a set of [R](https://www.r-project.org) / [Bioconductor](https://bioconductor.org) packages that powers differential expression analysis, variance decomposition, cell-type composition analysis, gene set enrichment, and genetic regulation of gene expression on population-scale single cell datasets.  
 
 | | | 
 |-|-|
